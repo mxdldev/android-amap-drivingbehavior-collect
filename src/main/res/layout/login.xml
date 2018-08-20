@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ly_login"
+     >
+    <TextView 
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_alignBottom="@+id/et_angle"
+		        android:text="角度"
+        android:numeric="integer"
+        />
+<EditText 
+    android:id="@+id/et_angle"
+    android:layout_width="100dip"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/tv_name"
+   android:layout_alignParentTop="true"
+   android:layout_marginLeft="15dip"
+    />
+
+ <TextView 
+        android:id="@+id/tv_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+       
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/et_speed"
+		        android:text="加速度"
+     android:numeric="integer"
+        />
+<EditText 
+    android:id="@+id/et_speed"
+    android:layout_width="100dip"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/et_angle"
+  	android:layout_below="@+id/et_angle"
+  
+    />
+    <TextView
+        android:id="@+id/txt_callgyro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="角频率"
+        android:numeric="integer"
+        android:layout_toLeftOf="@+id/et_collect_rate"
+        android:layout_alignBottom="@+id/et_collect_rate"
+         />
+    <EditText
+        android:id="@+id/et_collect_rate"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_speed"
+        android:layout_alignLeft="@+id/et_speed"
+        />
+</RelativeLayout>
